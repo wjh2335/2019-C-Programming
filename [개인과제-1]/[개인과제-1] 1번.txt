@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main(int n, char* v[])
+{
+    if (n != 4)
+    {
+        printf("매개변수가 맞지 않습니다!");
+        exit(0);
+    }
+    int a, b, c;
+    a = atoi(v[1]);
+    b = atoi(v[3]);
+    switch (v[2][0])
+    {
+        case '+': c = a + b; break;
+        case '-': c = a - b; break;
+        case '*': c = a * b; break;
+        case '/': c = a / b; break;
+        case '%': c = a % b; break;
+        default: exit(0);
+    }
+    printf("%d\n", c);
+}

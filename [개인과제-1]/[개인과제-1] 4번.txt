@@ -1,0 +1,14 @@
+#include <stdio.h>
+struct user
+{
+    int a;
+    char n[80];
+}we[2] = { {18,"jcshim"},{16,"jskim"} };
+int main()
+{
+    struct user* p;
+    p = we;
+    printf("%d %s\n", p->a, p->n);
+    ++p;
+    printf("%d %s\n", p->a, p->n);
+}
