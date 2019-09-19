@@ -1,0 +1,23 @@
+문제) 수 하나(n)를 키보드로 받고  n번째 알파벳을 대문자로 출력하는 프로그램을 함수를 이용하여 만들고 예외 처리까지 하시오.
+       (대문자 A의 아스키 코드는 65입니다.) 
+       (예) 입력 : 12  출력 : L
+
+
+
+#include <stdio.h>
+void fun(int n)
+{
+    printf("%c\n",n+64);
+}
+int main(void)
+{
+    int n;
+    scanf("%d",&n);
+    if(n<=0 || n>26)
+    {
+        printf("1에서 26사이의 숫자를 입력하세요.\n");
+        return 0;
+    }
+    fun(n);
+    return 0;
+}
