@@ -1,0 +1,21 @@
+10번) 두 명의 {이름과 나이 그리고 이메일}을 구조체 배열에 초기화하고, 함수 pr()에 포인터 전달하고 화면에 출력하시오.
+
+#include <stdio.h>
+struct user
+{
+	char name[20];
+	int n;
+	char email[50];
+};
+void pr(struct user *p)
+{
+	printf("%s %d %s\n",p->name,p->n,p->email);
+	++p;
+	printf("%s %d %s\n",p->name,p->n,p->email);
+}
+int main()
+{
+	struct user we[2]={{"WooJeHyun",20,"wjh2335@naver.com"},{"WooHyunJe",25,"whj1010@gmail.com"}};
+	pr(we);
+	return 0;
+}
