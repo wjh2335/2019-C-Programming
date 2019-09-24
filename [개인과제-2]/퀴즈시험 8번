@@ -1,0 +1,14 @@
+8번) 곱셈용 명령창 계산기를 구현하시오. 매개변수가 2개 이하면 프로그램이 종료 된다.
+     예) mul 10 * 2 결과) 20
+
+#include <stdio.h>
+#include <stdlib.h>
+int main(int n,char* v[])
+{
+	if(n<4) return 0;
+	int a,b;
+	a=atoi(v[1]);
+	b=atoi(v[3]);
+	printf("%d",a*b);
+	return 0;
+}
