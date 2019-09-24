@@ -6,7 +6,7 @@ int main()
 	FILE *fp=fopen("my.txt","r");
 	int a,b;
 	fscanf(fp,"%d %d",&a,&b);
-  fclose(fp);
+	fclose(fp);
 	printf("%d",a+b);
 	return 0;
 }
