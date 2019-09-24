@@ -1,0 +1,10 @@
+7번) 3개의 과일을 {"Banana","Orange","Kiwi"} 초기화 하고 화면에 출력하시오.
+
+#include <stdio.h>
+int main()
+{
+	char s[3][10]={"Banana","Orange","Kiwi"};
+	int i;
+	for(i=0;i<3;++i) printf("%s\n",s[i]);
+	return 0;
+}
