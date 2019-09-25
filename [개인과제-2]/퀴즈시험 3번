@@ -1,9 +1,0 @@
-3번) 두 실수를 메모리에 초기화 더하고 화면에 출력하시오.
-
-#include <stdio.h>
-int main()
-{
-	float a=3.2,b=5.4;
-	printf("%f",a+b);
-	return 0;
-}
